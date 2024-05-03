@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventKeycodes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeydown="updateAll(event)">
+
+    <div id="landingMessage" class="landingMessage">Press any key to get the keyCode</div>
+
+    <div>
+        <i class="fa fa-mobile" style="font-size:48px;color:rgb(255, 255, 255)">
+        </i>
+        <input type="text">
+
+    </div>
+
+
+    <div id="main" class="main hidden">
+        <div class="eventKey part">
+            <p>event.key</p>
+            <div id="eventKey" class="box"></div>
+        </div>
+        <div class="eventKeyCode part">
+            <p>event.keyCode</p>
+            <div id="eventKeyCode" class="box"></div>
+        </div>
+        <div class="eventCode part">
+            <p>event.Code</p>
+            <div id="eventCode" class="box"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
