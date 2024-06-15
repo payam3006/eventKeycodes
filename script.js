@@ -9,7 +9,9 @@ const updateAll = (event) => {
     mainPart = 1;
   }
 
-  document.getElementById("eventKey").innerText = `${event.key}`;
+  document.getElementById("eventKey").innerText = `${
+    event.key === " " ? "Space" : event.key
+  }`;
   document.getElementById("eventKeyCode").innerText = `${event.keyCode}`;
   document.getElementById("eventCode").innerText = `${event.code}`;
 
